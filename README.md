@@ -7,7 +7,7 @@ Read the wiki for Concept and Design
 1.  Template development [dev] : https://github.com/ScorpioCoding/Templates_dev.git
 2.  Template publish on github pages [pub] : https://github.com/ScorpioCoding/Templates.git
 
-==> ALL DEVELOPMENT IS DO IN THE `dev` REPO !!
+==> ALL DEVELOPMENT IS DONE IN THE [dev] REPO !!
 
 ### Dev repo Branches
 
@@ -20,8 +20,7 @@ Read the wiki for Concept and Design
 ### Git Rules for the `dev` repo
 
 1. The `master` branch is off limits and holds only release commits.
-2. The `dev` branch is the main development brach where everyone clones from and PULL requests are issued to.
-3. Clone thje `dev` branch and then..
-
-- use `$git checkout <existing branch>`to switch to an allready created branch
-- use `$git checkout <new branch> -b` to switch and create the new branch
+2. The `dev` branch is the main development branch where everyone clones from and PULL requests are issued to.
+3. Clone the `dev` branch and then..  
+   -- use `$git checkout <existing branch>` to switch to an allready created branch  
+   -- use `$git checkout <new branch> -b` to switch and create the new branch
