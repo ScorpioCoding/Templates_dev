@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>flexbox</title>
+</head>
+<style>
+  /* 768px is the norm between mobile and ..
+  * But for programming sake we make it smaller due to the splitscreen programming style
+  */
+  @media(min-width:468px) {
+    .container-1 {
+      display: flex;
+      /*
+      align-items: flex-start;
+      align-items: flex-end;
+      align-items: flex-center;
+      */
+      /*flex-direction: column;*/
+    }
+
+    .container-2 {
+      display: flex;
+      /*
+      justify-content: flex-start;   Default value
+      justify-content: flex-end;
+      justify-content: center;
+      */
+      justify-content: space-between;
+      /* space-between auto devides the space between your content evenly and flush with the sides*/
+      /*justify-content: space-around; divides evenly all round even the sides*/
+
+    }
+  }
+
+
+  .container-1 div,
+  .container-2 div,
+  .container-3 div {
+    border: 1px #ccc solid;
+    padding: 10px;
+  }
+
+  .box-1 {
+    flex: 1;
+    /* the width of the flex box */
+    order: 1;
+    /* the order of the box*/
+  }
+
+  .box-2 {
+    flex: 2;
+    order: 2
+  }
+
+  .box-3 {
+    flex: 3;
+    order: 3;
+  }
+
+  .container-2-box {
+    /*width: 27%;  width works but the right flex way is to use flex-basis*/
+    flex-basis: 27%;
+  }
+
+  .container-3 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .container-3-box {
+    flex-basis: 10%;
+  }
+</style>
+
+<body>
+  <div class="container-1">
+    <div class="box-1">
+      <h3>Box One</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, labore?
+      </p>
+    </div>
+    <div class="box-2">
+      <h3>Box Two</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, labore?
+      </p>
+    </div>
+    <div class="box-3">
+      <h3>Box Three</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, labore?
+      </p>
+    </div>
+  </div>
+
+  <div class="container-2">
+    <div class="container-2-box">
+      <h3>Box Four</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, labore?
+      </p>
+    </div>
+    <div class="container-2-box">
+      <h3>Box Five</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, labore?
+      </p>
+    </div>
+    <div class="container-2-box">
+      <h3>Box Six</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, labore?
+      </p>
+    </div>
+  </div>
+
+
+  <div class="container-3">
+    <div class="container-3-box">
+      <h3>Box Seven</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, labore?
+      </p>
+    </div>
+    <div class="container-3-box">
+      <h3>Box Eight</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, labore?
+      </p>
+    </div>
+    <div class="container-3-box">
+      <h3>Box Nine</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, labore?
+      </p>
+    </div>
+    <div class="container-3-box">
+      <h3>Box Ten</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, labore?
+      </p>
+    </div>
+    <div class="container-3-box">
+      <h3>Box Eleven</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, labore?
+      </p>
+    </div>
+    <div class="container-3-box">
+      <h3>Box Twelve</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, labore?
+      </p>
+    </div>
+  </div>
+
+</body>
+
+</html>
