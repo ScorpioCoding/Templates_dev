@@ -1,0 +1,32 @@
+{
+  "name": "templates_dev",
+  "version": "1.0.0",
+  "description": "ScorpioCoding Templates and Demo's",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ScorpioCoding/Templates_dev.git"
+  },
+  "keywords": [
+    "Templates",
+    "Layouts",
+    "Demo's",
+    "Samples",
+    "Websites",
+    "Html",
+    "Scss",
+    "jQuery"
+  ],
+  "author": "ScorpioCoding",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ScorpioCoding/Templates_dev/issues"
+  },
+  "homepage": "https://github.com/ScorpioCoding/Templates_dev#readme",
+  "devDependencies": {
+    "node-sass": "^4.9.3"
+  }
+}
