@@ -1,0 +1,29 @@
+/* --- Card -- */
+.sc-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: $sc-card-color;
+}
+
+.sc-card-header {}
+
+.sc-card-body {}
+
+.sc-card-footer {}
+
+.sc-card-img-top {}
+
+.sc-card-img-bottom {}
+
+.sc-card-overlay {}
+
+.sc-card-title {}
+
+.sc-card-text {}
+
+.sc-card-columns {}
+
+.sc-card-group {}
